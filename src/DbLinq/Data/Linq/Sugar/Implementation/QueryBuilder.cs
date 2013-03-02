@@ -402,7 +402,7 @@ namespace DbLinq.Data.Linq.Sugar.Implementation
                     SetInSelectCache(expressions, query);
                 }
             }
-            else if (query.InputParameters.Count > 0)
+            else
             {
                 Profiler.At("START: GetSelectQuery(), building Expression parameters of cached query");
                 var parameters = BuildExpressionParameters(expressions, queryContext);
